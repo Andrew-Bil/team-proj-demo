@@ -108,6 +108,13 @@
 }
 
 .about__list {
+  list-style: none;
+  display: inline;
+  // list-style-position: outside;
+  // display: inline-flex;
+  // flex-direction: column;
+  // text-align: left;
+
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
@@ -122,6 +129,9 @@
 }
 
 .about__item {
+  display: flex;
+  align-items: center;
+
   font-family: Montserrat;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -130,10 +140,13 @@
 
   &::before {
     content: '';
+    display: inline-block;
+
     width: 24px;
     height: 20px;
     margin-right: 35px;
-    background-image: url('../images/demo.jpg');
+
+    background-image: url('../images/about-section-img/tick.svg');
   }
 
   @media screen and (max-width: 767px) {
@@ -161,22 +174,22 @@
   }
 }
 
-.about__line {
-  display: inline-block;
-  border-bottom: 1px solid #ff6b09;
-  width: 20px;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 21px;
-  }
+// .about__line {
+//   display: inline-block;
+//   border-bottom: 1px solid #ff6b09;
+//   width: 20px;
+//   @media screen and (max-width: 767px) {
+//     margin-bottom: 21px;
+//   }
 
-  @media screen and (max-width: 1365px) {
-    margin-bottom: 28px;
-  }
+//   @media screen and (max-width: 1365px) {
+//     margin-bottom: 28px;
+//   }
 
-  @media screen and (min-width: 1366px) {
-    margin-bottom: 30px;
-  }
-}
+//   @media screen and (min-width: 1366px) {
+//     margin-bottom: 30px;
+//   }
+// }
 .about__text {
   font-family: Montserrat;
   font-weight: 500;
