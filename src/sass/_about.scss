@@ -109,7 +109,12 @@
 
 .about__list {
   list-style: none;
-  display: inline;
+  // display: table;
+
+  // display: inline-block;
+  // margin: 0;
+  // padding: 0;
+
   // list-style-position: outside;
   // display: inline-flex;
   // flex-direction: column;
@@ -129,6 +134,8 @@
 }
 
 .about__item {
+  // display: inline-block;
+
   display: flex;
   align-items: center;
 
@@ -141,6 +148,8 @@
   &::before {
     content: '';
     display: inline-block;
+
+    line-height: 36px;
 
     width: 24px;
     height: 20px;
