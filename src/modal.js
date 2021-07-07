@@ -1,5 +1,10 @@
 
-
+let elem = document.querySelector('.backdrop');
+let btn = document.querySelector('.btn');
+btn.addEventListener('click', myFunc);
+function myFunc() {
+elem.classList.toggle('backdrop--is-hidden');
+}
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
