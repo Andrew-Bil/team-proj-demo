@@ -25,7 +25,7 @@
                     write an Essay (Berkeley), Acadamic and Business Writing (Berkeley), The Art of teaching (GEMS
                     education), Powerful
                     Tools for Teaching and Learning (University of Houston).</p>
-                <a data-modal-open class="about__link" href="">Cambrige English Entry Level Certificate
+                <a data-modal-open class="about__link" href="#backdrop" id="certificate">Cambrige English Entry Level Certificate
                 </a>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
             </div>
@@ -52,12 +52,17 @@
     </div>
 </section>
 
-<div class="backdrop backdrop--is-hidden" data-modal>
+<div class="backdrop backdrop--is-hidden" data-modal id="backdrop">
     <div class="modal">
-        <button class="modal__close-button btn" data-modal-close>
+        <a href="#certificate" class="close">
+            <svg class="icon modal__close-icon" width="11" height="11">
+            <use href="images/icons.svg#cross"></use>
+        </svg>
+        </a>
+        <!-- <button class="modal__close-button btn close" data-modal-close>
             <svg class="icon modal__close-icon" width="11" height="11">
                 <use href="images/icons.svg#cross"></use>
             </svg>
-        </button>
+        </button> -->
     </div>
 </div>
